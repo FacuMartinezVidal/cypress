@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { trpc } from '@/utils/trpc';
+import { trpc } from "@/utils/trpc";
 
 export default function Home() {
-  const hello = trpc.hello.greeting.useQuery({ name: 'tRPC' });
+  const hello = trpc.hello.greeting.useQuery({ name: "tRPC" });
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
